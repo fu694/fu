@@ -1,0 +1,151 @@
+/* Basic Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-family: "Tw Cen MT Condensed", sans-serif;
+  margin: 20px 0;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* Home Page Styles */
+#homePage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#clockContainer {
+  background: none !important; /* Completely remove background */
+  box-shadow: none !important; /* Ensure no shadow */
+  border: none !important; /* Remove any border */
+}
+#digitalClock img {
+  width: 120px !important; /* Increase width */
+  height: 150px !important; /* Increase height */
+  max-width: 150px !important; /* Allow larger max width */
+  object-fit: contain; /* Maintain aspect ratio */
+}
+#pendingImages {
+  display: none !important; /* Hides the text */
+}
+#digitalClock {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Adjust spacing between numbers */
+}
+
+.colon {
+  font-size: 2rem; /* Adjust size */
+  line-height: 1; /* Fix vertical alignment */
+  margin: 0 5px; /* Adds spacing */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#toUploadPage {
+  margin-top: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  border: 2px solid black; /* ✅ Add border */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#toUploadPage:hover {
+  background-color: lightgray; /* Optional: Highlight on hover */
+}
+
+
+/* Upload Page Styles */
+#uploadPage {
+  padding: 20px;
+  width: 100%;
+  max-width: 600px;
+}
+
+#numberSelector {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.numberButton {
+  padding: 10px 20px;
+  font-size: 1.5rem;
+  border: 1px solid gray;
+  background-color: white;
+  cursor: pointer;
+}
+
+.numberButton:hover {
+  background-color: lightgray;
+}
+
+#inputContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#canvasContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fileUploadContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#postButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+#postStatus {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: gray;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  #inputContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #canvasContainer, #fileUploadContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}

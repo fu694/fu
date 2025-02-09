@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth.js"></script>
+    <script type="module" src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js"></script>
+    <link rel="stylesheet" href="admin-styles.css">
+</head>
+<body>
+
+    <h1>Admin Panel</h1>
+
+    <!-- Authentication Section -->
+    <button id="loginButton">Sign in with Google</button>
+    <button id="logoutButton" style="display:none;">Logout</button>
+
+    <div id="adminInfo" style="display:none;">
+        <p>Logged in as: <span id="adminEmail"></span></p>
+    </div>
+
+    <!-- Image Approval Section -->
+    <h2>Pending Images</h2>
+    <div id="pendingImages"></div>
+    
+
+    <script type="module" src="admin.js"></script>
+
+
+</body>
+</html>
